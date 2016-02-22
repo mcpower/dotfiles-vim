@@ -1,3 +1,19 @@
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
+
+set showcmd
+set hlsearch
+set ignorecase
+set smartcase
+set number
+
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+
+if !exists('g:airline_symbols')
+	let g:airline_symbols = {}
+endif
+let g:airline_left_sep = '▒'
+let g:airline_right_sep = '▒'
