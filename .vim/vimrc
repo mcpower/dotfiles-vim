@@ -20,6 +20,8 @@ set shiftwidth=4
 set softtabstop=4
 set expandtab
 
+set laststatus=2
+
 if !exists('g:airline_symbols')
 	let g:airline_symbols = {}
 endif
