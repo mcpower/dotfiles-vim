@@ -15,6 +15,7 @@ set hlsearch
 set ignorecase
 set smartcase
 set number
+set list
 
 set shiftwidth=4
 set softtabstop=4
