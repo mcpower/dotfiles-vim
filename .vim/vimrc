@@ -3,6 +3,7 @@ call plug#begin()
 Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-sleuth'
+Plug 'scrooloose/syntastic'
 
 call plug#end()
 
@@ -24,3 +25,11 @@ if !exists('g:airline_symbols')
 endif
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
+
+let g:airline#extensions#syntastic#enabled = 1
+let g:syntastic_html_tidy_exec = 'tidy'
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_html_tidy_quiet_messages = { "level": "warnings" }
