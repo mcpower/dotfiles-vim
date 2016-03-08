@@ -2,11 +2,12 @@ call plug#begin()
 
 Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
-Plug 'tpope/vim-sleuth'
 Plug 'scrooloose/syntastic'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'Valloric/YouCompleteMe'
+Plug 'lervag/vimtex'
+Plug 'Yggdroot/indentLine'
 
 call plug#end()
 
@@ -49,6 +50,16 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf = 0
+
+" Vim
+let g:indentLine_color_term = 239
+
+" GVim
+let g:indentLine_color_gui = '#A4E57E'
+
+" none X terminal
+let g:indentLine_color_tty_light = 7 " (default: 4)
+let g:indentLine_color_dark = 1 " (default: 2)
 
 hi linenr ctermfg=green ctermbg=black cterm=bold
 set cursorline
