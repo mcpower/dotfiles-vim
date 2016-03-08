@@ -18,12 +18,14 @@ set hlsearch
 set ignorecase
 set smartcase
 set number
-set list
+set list lcs=trail:·,tab:\ \ 
 set mouse=a
 
+set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
+set smarttab
 
 set laststatus=2
 
@@ -47,3 +49,8 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf = 0
+
+hi linenr ctermfg=green ctermbg=black cterm=bold
+set cursorline
+hi cursorline cterm=none
+hi cursorlinenr ctermfg=black ctermbg=green cterm=bold
